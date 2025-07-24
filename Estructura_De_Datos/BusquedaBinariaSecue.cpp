@@ -84,12 +84,8 @@ void BusquedaSecuencial(int v[], int len, int b)
 			cout<<"El numero "<<b<<" se encuentra en la posicion "<< i+1 <<endl;
 			}
 		}
-		
 		i++;
-	
 	}
-	
-
 }
 
 int main()
@@ -108,8 +104,5 @@ int main()
 	cout<<"----------------Busqueda Binaria ----------------"<<endl;
 	BusquedaBinaria(nums, n, x);
 
-
-	
-	
 	return 0;
 }
