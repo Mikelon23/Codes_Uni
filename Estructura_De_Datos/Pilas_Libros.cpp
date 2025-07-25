@@ -22,7 +22,7 @@ void Mostrar(stack<Libro> &pila) {
     stack<Libro> temp = pila;  // Create a temporary stack to preserve original
     
     if (temp.empty()) {
-        cout << "La pila está vacía" << endl;
+        cout << "La pila está vacia" << endl;
         return;
     }
     
