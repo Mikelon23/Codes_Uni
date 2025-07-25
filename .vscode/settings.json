@@ -74,6 +74,7 @@
         "izquierda",
         "Limpia",
         "maneja",
+        "Mayormenor",
         "Medio",
         "mientras",
         "Mostar",
@@ -124,6 +125,7 @@
         "vacía",
         "vacías",
         "válido",
+        "Valormenor",
         "Verifica"
     ],
     "C_Cpp.errorSquiggles": "disabled"
