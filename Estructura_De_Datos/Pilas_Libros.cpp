@@ -1,5 +1,6 @@
 #include <iostream>
 #include <stack>
+#include <limits>
 
 // Implemente las operaciones de la pila, indicadas en clase,
 // y trabaje con un nodo que contenga la información de libros.
@@ -15,59 +16,72 @@ struct Libro {
     string Autor;
     int Paginas;
     string ISBN;
+    int Edicion;  // Added edition number
 };
 
-// Function to display books from the stack
-void Mostrar(stack<Libro> &pila) {
-    stack<Libro> temp = pila;  // Create a temporary stack to preserve original
+void limpiarBuffer() {
+    cin.clear();
+    cin.ignore(numeric_limits<streamsize>::max(), '\n');
+}
+
+void ingresarLibro(Libro &libro) {
+    cout << "\n=== Ingreso de Libro ===\n";
     
-    if (temp.empty()) {
-        cout << "La pila está vacia" << endl;
-        return;
+    cout << "Titulo: ";
+    limpiarBuffer();
+    getline(cin, libro.Titulo);
+    
+    cout << "Autor: ";
+    getline(cin, libro.Autor);
+    
+    cout << "Paginas: ";
+    while (!(cin >> libro.Paginas) || libro.Paginas <= 0) {
+        cout << "Por favor ingrese un número válido de páginas: ";
+        limpiarBuffer();
     }
     
+    cout << "ISBN: ";
+    limpiarBuffer();
+    getline(cin, libro.ISBN);
+}
+
+void mostrarPila(stack<Libro> &pila) {
+    if (pila.empty()) {
+        cout << "La pila está vacía\n";
+        return;
+    }
+
+    stack<Libro> temp = pila;
     while (!temp.empty()) {
-        Libro libro = temp.top();
-        cout << "\n=== Informacion del Libro ===" << endl;
-        cout << "Titulo: " << libro.Titulo << endl;
-        cout << "Autor: " << libro.Autor << endl;
-        cout << "Paginas: " << libro.Paginas << endl;
-        cout << "ISBN: " << libro.ISBN << endl;
-        cout << "==========================\n" << endl;
+        const Libro &libro = temp.top();
+        cout << "\n=== Libro ===\n"
+             << "Titulo: " << libro.Titulo << "\n"
+             << "Autor: " << libro.Autor << "\n"
+             << "Paginas: " << libro.Paginas << "\n"
+             << "ISBN: " << libro.ISBN << "\n"
+             << "============\n";
         temp.pop();
     }
 }
 
-int main()
-{
-  stack<Libro> pila;
-  Libro libro;
-  int n;
+int main() {
+    stack<Libro> pila;
+    int n;
 
-  cout << "Ingrese el numero de libros: ";
-  cin >> n;
+    cout << "Ingrese el número de libros: ";
+    while (!(cin >> n) || n <= 0) {
+        cout << "Por favor ingrese un número válido: ";
+        limpiarBuffer();
+    }
 
-  for (int i = 0; i < n; i++)
-  {
-    cout << "Ingrese el titulo del libro: ";
-    cin.ignore();
-		getline(cin, libro.Titulo);
-    cout << "Ingrese el autor del libro: ";
-    cin.ignore();
-		getline(cin, libro.Autor);
-    cout << "Ingrese el numero de paginas del libro: ";
-    cin >> libro.Paginas;
-    cout << "Ingrese el ISBN del libro: ";
-    cin.ignore();
-		getline(cin, libro.ISBN);
+    for (int i = 0; i < n; i++) {
+        Libro libro;
+        ingresarLibro(libro);
+        pila.push(libro);
+    }
 
-    cout << endl;
+    cout << "\nMostrando todos los libros:\n";
+    mostrarPila(pila);
 
-    pila.push(libro);
-  }
-
-  // Mostrar la pila
-  Mostrar(pila);
-
-  return 0;
+    return 0;
 }
