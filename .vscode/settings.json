@@ -95,5 +95,6 @@
         "vacías",
         "válido",
         "Verifica"
-    ]
+    ],
+    "C_Cpp.errorSquiggles": "disabled"
 }
