@@ -66,12 +66,20 @@ void ndiv(int v[], int n , int *cdiv){
 }
 int main(){
 	int vector[5];
-	int positivo, negativo, primo, multiplo, divisor;
-	LeerVector(vector, 5);
-	posneg(vector, 5, &positivo, &negativo);
-	nprimos(vector, 5, &primo);
-	nmultiplos(vector, 5, &multiplo);
-	ndiv(vector, 5, &divisor);
-	MostrarVector(vector, 5, positivo, negativo, primo, multiplo, divisor);
-	system("pause");
+	
+    int positivo, negativo, primo, multiplo, divisor;
+	
+    LeerVector(vector, 5);
+	
+    posneg(vector, 5, &positivo, &negativo);
+	
+    nprimos(vector, 5, &primo);
+	
+    nmultiplos(vector, 5, &multiplo);
+	
+    ndiv(vector, 5, &divisor);
+	
+    MostrarVector(vector, 5, positivo, negativo, primo, multiplo, divisor);
+	
+    system("pause");
 }
