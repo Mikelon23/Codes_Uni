@@ -6,7 +6,7 @@
 // coloquial para las condiciones.
 
 #include <iostream>
-#include <cmath> // para fmod
+#include <cmath>
 using namespace std;
 
 int main() {
