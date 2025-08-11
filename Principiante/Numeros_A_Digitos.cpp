@@ -1,7 +1,7 @@
 // Separa un numero entero en sus digitos
 
 #include <iostream>
-#include <cmath> // para pow y trunc
+#include <cmath> 
 using namespace std;
 
 int main() {
