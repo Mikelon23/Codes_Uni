@@ -1,5 +1,5 @@
 #include <iostream>
-#include <cmath> // para sqrt
+#include <cmath>
 using namespace std;
 
 int main() {
