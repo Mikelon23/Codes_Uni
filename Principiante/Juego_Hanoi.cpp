@@ -1,15 +1,15 @@
-//    El objetivo del juego es mover los discos de la torre 1 a la 3 en la
+// El objetivo del juego es mover los discos de la torre 1 a la 3 en la
 // menor cantidad de movimientos posible. No se puede colocar un disco de 
 // un tamanio sobre otro mas chico
 
-//     Hay una matriz que representa las torres, cada columna contiene
+//  Hay una matriz que representa las torres, cada columna contiene
 //  nros que representan los tamanios de los discos en esas torres (solo
 //  interesan los valores hasta la cantidad de discos de esa torre).
 //  Cuantos discos tiene cada torre lo dice el vector cant_discos. 
 
 #include <iostream>
 #include <iomanip>
-#include <cstdlib> // para system("cls") y system("pause")
+#include <cstdlib>
 using namespace std;
 
 int main() {
