@@ -1,7 +1,8 @@
 #include <iostream>
 using namespace std;
 
-int main() {
+int main()
+{
 	double precio, total, descuento;
 	cout << "Ingrese el precio: ";
 	cin >> precio;
