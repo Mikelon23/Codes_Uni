@@ -1,7 +1,7 @@
 // Muestra como hacer un men� simple con las estructuras Repetir-Hasta Que y Seg�n
 
 #include <iostream>
-#include <cstdlib> // system("cls"), system("pause")
+#include <cstdlib>
 using namespace std;
 
 int main() {
