@@ -2,7 +2,7 @@
 
 #include <iostream>
 #include <cmath>
-#include <cstdlib> // Para system("pause") y system("cls")
+#include <cstdlib>
 using namespace std;
 
 int main() {
