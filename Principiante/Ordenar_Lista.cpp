@@ -1,4 +1,4 @@
-//   Se ingresa una lista de nombres (la lista termina
+// Se ingresa una lista de nombres (la lista termina
 // cuando se ingresa un nombre en blanco) no permitiendo
 // ingresar repetidos y luego se ordena y muestra
 
