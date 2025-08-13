@@ -2,7 +2,7 @@
 #include <string>
 #include <thread>
 #include <chrono>
-#include <cstdlib> // para system("CLS")
+#include <cstdlib>
 
 using namespace std;
 
