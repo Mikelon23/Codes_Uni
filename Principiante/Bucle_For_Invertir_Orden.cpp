@@ -18,7 +18,7 @@ int main() {
 
     cout << "Los elementos del arreglo son:" << endl;
     for (i = 0; i < 10; i++) {
-        cout << "Posición " << i << ": " << A[i] << endl;
+        cout << "Posicion " << i << ": " << A[i] << endl;
     }
 
     cout << endl; // Línea en blanco
