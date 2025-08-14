@@ -1,6 +1,6 @@
 #include <iostream>
 #include <cstdlib>
-#include <ctime>   // Para time()
+#include <ctime>
 
 using namespace std;
 
