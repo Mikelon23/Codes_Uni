@@ -1,5 +1,5 @@
 #include <iostream>
-#include <cstdlib> // Para rand() y srand()
+#include <cstdlib>
 #include <ctime>   // Para time()
 
 using namespace std;
