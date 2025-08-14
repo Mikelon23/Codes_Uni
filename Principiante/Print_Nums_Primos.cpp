@@ -1,7 +1,7 @@
 // Encuentra los primeros N numeros primos
 
 #include <iostream>
-#include <cmath> // Para sqrt()
+#include <cmath>
 
 using namespace std;
 
