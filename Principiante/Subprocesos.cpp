@@ -1,4 +1,3 @@
-// funcion que no recibe ni devuelve nada
 #include <iostream>
 using namespace std;
 
