@@ -1,7 +1,7 @@
 // calcula las raices de una ecuacion de segundo grado
 
 #include <iostream>
-#include <cmath> // para sqrt()
+#include <cmath>
 using namespace std;
 
 int main() {
