@@ -1,5 +1,4 @@
 // calcula las raices de una ecuacion de segundo grado
-
 #include <iostream>
 #include <cmath>
 using namespace std;
