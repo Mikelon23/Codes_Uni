@@ -8,7 +8,7 @@ int main() {
     bool SePuedeConvertir = true;
 
     // leer el número
-    cout << "Ingrese un número entre 1 y 1000: ";
+    cout << "Ingrese un numero entre 1 y 1000: ";
     cin >> Numero;
 
     // Validaciones
