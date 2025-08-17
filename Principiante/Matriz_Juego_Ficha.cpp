@@ -1,3 +1,10 @@
+/* inicializa dos matrices de 3x3, una para guardar la ficha que se ve, 
+y otra para un valor asociado a la ficha, para un jugador sera 1, para
+el otro 2, entoces para ver quien gano se multiplica por fila, por
+columna y por diagonal, si el resultado es 1 gano el primer jugador,
+si es 8 gano el segundo, si es 0 es porque faltaba completar, si
+es otra cosa, estan las tres fichas, pero no son del mismo jugador*/ 
+             
 #include <iostream>
 #include <vector>
 using namespace std;
