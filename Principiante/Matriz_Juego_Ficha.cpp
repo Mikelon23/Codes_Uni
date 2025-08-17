@@ -77,17 +77,17 @@ int main() {
 
             // Pedir posición
             int Pos, i, j;
-            cout << "Ingrese la posición (1-9): ";
+            cout << "Ingrese la posicion (1-9): ";
             do {
                 cin >> Pos;
                 if (Pos < 1 || Pos > 9) {
-                    cout << "Posición incorrecta, ingrese nuevamente: ";
+                    cout << "Posicion incorrecta, ingrese nuevamente: ";
                     Pos = 99;
                 } else {
                     i = (Pos - 1) / 3;
                     j = (Pos - 1) % 3;
                     if (Tab1[i][j] != 0) {
-                        cout << "Posición ocupada, ingrese nuevamente: ";
+                        cout << "Posicion ocupada, ingrese nuevamente: ";
                         Pos = 99;
                     }
                 }
