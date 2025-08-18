@@ -1,5 +1,5 @@
 #include <iostream>
-#include <cmath>  // para pow()
+#include <cmath>
 
 using namespace std;
 
