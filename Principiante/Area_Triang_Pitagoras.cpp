@@ -1,3 +1,6 @@
+/* Lee los tres lados de un triangulo rectangulo, determina
+si corresponden (por Pitargoras) y en caso afirmativo
+calcula el area */
 #include <iostream>
 #include <cmath>
 
