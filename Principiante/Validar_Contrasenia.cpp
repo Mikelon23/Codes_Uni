@@ -8,7 +8,7 @@ int main() {
 
     do {
         if (c != 3) {
-            cout << "Ingrese la contraseña: ";
+            cout << "Ingrese la contrasenia: ";
             cin >> clave;
 
             if (clave != cont) {
