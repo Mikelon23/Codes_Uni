@@ -1,7 +1,3 @@
-// ===============================
-//  Programa: Vector Costo Plato
-// ===============================
-
 #include <iostream>
 #include <vector>
 #include <string>
