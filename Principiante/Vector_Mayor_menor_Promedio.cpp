@@ -1,7 +1,3 @@
-// ======================================
-//   Programa: Vector Mayor, Menor y Promedio
-// ======================================
-
 #include <iostream>
 #include <vector>
 using namespace std;
