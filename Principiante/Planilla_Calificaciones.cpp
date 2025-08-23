@@ -38,3 +38,18 @@ void generar_codigos(vector<int>& v) {
         v[i] = 100 + i + 1;
     }
 }
+// ----- INGRESO DE NOMBRES Y NOTAS -----
+void ingreso_nombres_notas(vector<string>& vec, vector<vector<double>>& mat) {
+    for (size_t i = 0; i < vec.size(); i++) {
+        cout << "Ingrese el nombre del estudiante " << i + 1 << ": ";
+        cin.ignore();
+        getline(cin, vec[i]);
+        double suma = 0;
+        for (int j = 0; j < 3; j++) {
+            cout << "Ingrese la nota " << j + 1 << ": ";
+            cin >> mat[i][j];
+            suma += mat[i][j];
+        }
+        mat[i][3] = suma / 3.0; // promedio
+    }
+}
