@@ -17,3 +17,18 @@ void menu() {
     cout << "8. Salir\n";
     cout << "Seleccione su opcion: ";
 }
+// ----- ORDENAR VECTORES -----
+void ordenar_vector(vector<string>& v) {
+    sort(v.begin(), v.end()); // Ordena ascendente
+}
+
+void ordenar_vectorxnotas(vector<double>& v, vector<int>& vpos) {
+    for (size_t i = 0; i < v.size(); i++) {
+        for (size_t j = 0; j < v.size() - 1; j++) {
+            if (v[j] < v[j + 1]) { // descendente
+                swap(v[j], v[j + 1]);
+                swap(vpos[j], vpos[j + 1]);
+            }
+        }
+    }
+}
