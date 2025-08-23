@@ -32,3 +32,9 @@ void ordenar_vectorxnotas(vector<double>& v, vector<int>& vpos) {
         }
     }
 }
+// ----- GENERAR CODIGOS -----
+void generar_codigos(vector<int>& v) {
+    for (size_t i = 0; i < v.size(); i++) {
+        v[i] = 100 + i + 1;
+    }
+}
