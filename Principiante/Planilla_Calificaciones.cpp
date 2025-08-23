@@ -53,3 +53,41 @@ void ingreso_nombres_notas(vector<string>& vec, vector<vector<double>>& mat) {
         mat[i][3] = suma / 3.0; // promedio
     }
 }
+// ----- VISUALIZACIONES -----
+void visualizar_vector(const vector<string>& v) {
+    for (const auto& elem : v) {
+        cout << elem << "\n";
+    }
+}
+
+void visualizar_vector(const vector<int>& v) {
+    for (auto elem : v) {
+        cout << elem << "\n";
+    }
+}
+
+void visualizar_nombres(const vector<int>& vpos, const vector<string>& v) {
+    for (auto pos : vpos) {
+        cout << v[pos] << "\n";
+    }
+}
+
+void visualizar_notas(const vector<vector<double>>& mat) {
+    for (auto fila : mat) {
+        for (auto valor : fila) {
+            cout << valor << "  ";
+        }
+        cout << "\n";
+    }
+}
+
+void visualizar_notasxcodigo(const vector<string>& vec,
+                             const vector<vector<double>>& mat, int pos) {
+    cout << "Nombre: " << vec[pos] << "\n";
+    for (int j = 0; j < 4; j++) {
+        if (j < 3)
+            cout << "Nota parcial " << j + 1 << ": " << mat[pos][j] << "\n";
+        else
+            cout << "Definitiva: " << mat[pos][j] << "\n";
+    }
+}
