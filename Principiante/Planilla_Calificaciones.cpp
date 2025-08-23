@@ -91,3 +91,10 @@ void visualizar_notasxcodigo(const vector<string>& vec,
             cout << "Definitiva: " << mat[pos][j] << "\n";
     }
 }
+// ----- BUSCAR CODIGO -----
+int buscar_codigo(int cod, const vector<int>& vc) {
+    for (size_t i = 0; i < vc.size(); i++) {
+        if (vc[i] == cod) return i;
+    }
+    return -1;
+}
