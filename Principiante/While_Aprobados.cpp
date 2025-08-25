@@ -2,7 +2,6 @@
 using namespace std;
 
 int main() {
-    // Título del programa
     cout << "===== CONTAR ESTUDIANTES APROBADOS =====" << endl;
 
     int n, i = 1, ca = 0;  // n = cantidad de estudiantes, ca = contador de aprobados
