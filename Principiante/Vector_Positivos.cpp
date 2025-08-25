@@ -2,7 +2,6 @@
 using namespace std;
 
 int main() {
-    // Título del programa
     cout << "===== VECTOR SOLO POSITIVOS =====" << endl;
 
     int v[10];
