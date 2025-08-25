@@ -1,10 +1,9 @@
 #include <iostream>
-#include <cstdlib>   // Para rand()
-#include <ctime>     // Para srand()
+#include <cstdlib>  
+#include <ctime>    
 using namespace std;
 
 int main() {
-    // Título del programa
     cout << "===== BUSQUEDA SECUENCIAL EN UN VECTOR =====" << endl;
 
     int n, num, pos = -1; 
