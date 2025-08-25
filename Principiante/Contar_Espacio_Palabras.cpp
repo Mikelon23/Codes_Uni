@@ -3,7 +3,6 @@
 using namespace std;
 
 int main() {
-    // Título del programa
     cout << "===== CONTAR ESPACIOS, PALABRAS Y LETRAS =====" << endl;
 
     string cad;
