@@ -2,7 +2,6 @@
 using namespace std;
 
 int main() {
-    // Título del programa
     cout << "===== CONTADOR DE NOTAS 9 Y 10 =====" << endl;
 
     int n, i = 1, c9 = 0, c10 = 0, nota;
