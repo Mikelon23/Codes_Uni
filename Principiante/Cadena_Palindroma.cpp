@@ -3,7 +3,6 @@
 using namespace std;
 
 int main() {
-    // Título del programa
     cout << "===== CADENA INVERTIDA Y PALINDROMA =====" << endl;
 
     string cad1, cad2 = "";
