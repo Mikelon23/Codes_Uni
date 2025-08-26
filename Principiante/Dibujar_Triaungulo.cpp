@@ -2,7 +2,6 @@
 using namespace std;
 
 int main() {
-    // Título del programa
     cout << "===== DIBUJA UN TRIANGULO =====" << endl;
 
     int b;
