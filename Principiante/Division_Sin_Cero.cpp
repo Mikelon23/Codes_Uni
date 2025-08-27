@@ -2,7 +2,6 @@ C#include <iostream>
 using namespace std;
 
 int main() {
-    // Título del programa
     cout << "===== DIVISION EVITANDO DIVISION POR CERO =====" << endl;
 
     int a, b;
