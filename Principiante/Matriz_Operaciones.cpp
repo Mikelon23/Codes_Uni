@@ -51,3 +51,19 @@ void lleno_matriz(vector<vector<int>> &mat, vector<int> &vaux, int p) {
         }
     }
 }
+// Mostrar diagonal secundaria
+void diagonal_secundaria(vector<vector<int>> &mat, int p) {
+    for (int i = 0, j = p - 1; i < p; i++, j--) {
+        cout << mat[i][j] << "  ";
+    }
+    cout << endl;
+}
+
+// Llenar matriz con ceros
+void ingresar_ceros(vector<vector<int>> &mat, int p) {
+    for (int i = 0; i < p; i++) {
+        for (int j = 0; j < p; j++) {
+            mat[i][j] = 0;
+        }
+    }
+}
