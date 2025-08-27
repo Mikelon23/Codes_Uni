@@ -86,7 +86,7 @@ void llenar_matriz_inferior(vector<vector<int>> &mat2, vector<vector<int>> &mat,
 }
 // Programa principal
 int main() {
-    cout << "===== OPERACIONES CON MATRICES CUADRADAS =====" << endl;
+    cout << "===== OPERACIONES CON MATRICES =====" << endl;
 
     int p;
     cout << "Ingrese el numero de filas y columnas de la matriz: ";
