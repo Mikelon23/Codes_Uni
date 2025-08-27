@@ -22,3 +22,12 @@ void visualizar_matriz(vector<vector<int>> &mat, int p) {
         cout << endl;
     }
 }
+// Llenar vector con elementos de la matriz
+void lleno_vector(vector<int> &vaux, vector<vector<int>> &mat, int p) {
+    int c = 0;
+    for (int i = 0; i < p; i++) {
+        for (int j = 0; j < p; j++) {
+            vaux[c++] = mat[i][j];
+        }
+    }
+}
