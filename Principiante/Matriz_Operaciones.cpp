@@ -84,3 +84,47 @@ void llenar_matriz_inferior(vector<vector<int>> &mat2, vector<vector<int>> &mat,
         }
     }
 }
+// Programa principal
+int main() {
+    cout << "===== OPERACIONES CON MATRICES CUADRADAS =====" << endl;
+
+    int p;
+    cout << "Ingrese el numero de filas y columnas de la matriz: ";
+    cin >> p;
+
+    vector<vector<int>> mat(p, vector<int>(p));
+    vector<vector<int>> mat2(p, vector<int>(p));
+    vector<int> vaux(p * p);
+
+    // Ingresar matriz
+    ingresar_matriz(mat, p);
+
+    cout << "\nLa matriz ingresada es:" << endl;
+    visualizar_matriz(mat, p);
+
+    // Llenar vector y ordenar
+    lleno_vector(vaux, mat, p);
+    ordena_vector(vaux);
+    lleno_matriz(mat, vaux, p);
+
+    cout << "\nLa matriz ordenada es:" << endl;
+    visualizar_matriz(mat, p);
+
+    // Diagonal secundaria
+    cout << "\nLa diagonal secundaria de la matriz es:" << endl;
+    diagonal_secundaria(mat, p);
+
+    // Triangular superior
+    ingresar_ceros(mat2, p);
+    llenar_matriz_superior(mat2, mat, p);
+    cout << "\nLa matriz triangular superior es:" << endl;
+    visualizar_matriz(mat2, p);
+
+    // Triangular inferior
+    ingresar_ceros(mat2, p);
+    llenar_matriz_inferior(mat2, mat, p);
+    cout << "\nLa matriz triangular inferior es:" << endl;
+    visualizar_matriz(mat2, p);
+
+    return 0;
+}
