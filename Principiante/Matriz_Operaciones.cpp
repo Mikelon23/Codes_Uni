@@ -31,3 +31,23 @@ void lleno_vector(vector<int> &vaux, vector<vector<int>> &mat, int p) {
         }
     }
 }
+// Ordenar vector (burbuja descendente)
+void ordena_vector(vector<int> &vaux) {
+    int n = vaux.size();
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n - 1; j++) {
+            if (vaux[j] < vaux[j + 1]) {
+                swap(vaux[j], vaux[j + 1]);
+            }
+        }
+    }
+}
+// Llenar matriz desde vector
+void lleno_matriz(vector<vector<int>> &mat, vector<int> &vaux, int p) {
+    int c = 0;
+    for (int i = 0; i < p; i++) {
+        for (int j = 0; j < p; j++) {
+            mat[i][j] = vaux[c++];
+        }
+    }
+}
