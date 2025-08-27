@@ -67,3 +67,20 @@ void ingresar_ceros(vector<vector<int>> &mat, int p) {
         }
     }
 }
+// Triangular superior
+void llenar_matriz_superior(vector<vector<int>> &mat2, vector<vector<int>> &mat, int p) {
+    for (int i = 0; i < p; i++) {
+        for (int j = i; j < p; j++) {
+            mat2[i][j] = mat[i][j];
+        }
+    }
+}
+
+// Triangular inferior
+void llenar_matriz_inferior(vector<vector<int>> &mat2, vector<vector<int>> &mat, int p) {
+    for (int i = 0; i < p; i++) {
+        for (int j = 0; j <= i; j++) {
+            mat2[i][j] = mat[i][j];
+        }
+    }
+}
