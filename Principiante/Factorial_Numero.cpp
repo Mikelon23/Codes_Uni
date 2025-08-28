@@ -2,7 +2,6 @@
 using namespace std;
 
 int main() {
-    // Título del programa
     cout << "===== FACTORIAL DE UN NUMERO =====" << endl;
 
     int n, fact = 1;
