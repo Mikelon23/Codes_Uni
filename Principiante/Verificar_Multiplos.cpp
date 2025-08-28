@@ -1,7 +1,6 @@
 #include <iostream>
 using namespace std;
 
-// Función que verifica múltiplos
 void EsMultiplo(int a, int b) {
     if (b == 0 || a == 0) {
         cout << "Error: No se puede calcular múltiplos con cero." << endl;
