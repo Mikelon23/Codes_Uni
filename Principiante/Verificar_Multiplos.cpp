@@ -3,16 +3,16 @@ using namespace std;
 
 void EsMultiplo(int a, int b) {
     if (b == 0 || a == 0) {
-        cout << "Error: No se puede calcular múltiplos con cero." << endl;
+        cout << "Error: No se puede calcular multiplos con cero." << endl;
         return;
     }
 
     if (a % b == 0) {
-        cout << a << " es múltiplo de " << b << endl;
+        cout << a << " es multiplo de " << b << endl;
     } else if (b % a == 0) {
-        cout << b << " es múltiplo de " << a << endl;
+        cout << b << " es multiplo de " << a << endl;
     } else {
-        cout << "No son múltiplos " << a << " y " << b << endl;
+        cout << "No son multiplos " << a << " y " << b << endl;
     }
 }
 
