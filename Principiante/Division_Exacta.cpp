@@ -1,7 +1,6 @@
 #include <iostream>
 using namespace std;
 
-// Función que verifica si la división es exacta
 bool divisionexacta(int a, int b) {
     if (b == 0) {
         cout << "Error: Division por cero no permitida." << endl;
