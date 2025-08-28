@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+
+// Función que verifica múltiplos
+void EsMultiplo(int a, int b) {
+    if (b == 0 || a == 0) {
+        cout << "Error: No se puede calcular múltiplos con cero." << endl;
+        return;
+    }
+
+    if (a % b == 0) {
+        cout << a << " es múltiplo de " << b << endl;
+    } else if (b % a == 0) {
+        cout << b << " es múltiplo de " << a << endl;
+    } else {
+        cout << "No son múltiplos " << a << " y " << b << endl;
+    }
+}
+
+int main() {
+    cout << "===== VERIFICAR MULTIPLOS =====" << endl;
+
+    int a, b;
+
+    cout << "Ingrese el primer numero: ";
+    cin >> a;
+    cout << "Ingrese el segundo numero: ";
+    cin >> b;
+
+    EsMultiplo(a, b);
+
+    return 0;
+}
