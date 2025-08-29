@@ -26,3 +26,18 @@ void ingresar_vector(vector<string> &v) {
         getline(cin, v[i]);
     }
 }
+// Función para visualizar vector entero
+void visualizar_vector(const vector<int> &v) {
+    for (size_t i = 0; i < v.size(); i++) {
+        cout << v[i] << " ";
+    }
+    cout << endl;
+}
+
+// Función para visualizar vector real
+void visualizar_vector(const vector<double> &v) {
+    for (size_t i = 0; i < v.size(); i++) {
+        cout << v[i] << " ";
+    }
+    cout << endl;
+}
