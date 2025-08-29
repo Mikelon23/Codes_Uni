@@ -69,3 +69,49 @@ void ordenar_vector(vector<string> &v) {
         }
     }
 }
+int main() {
+    cout << "===== MANEJO DE VECTORES =====" << endl;
+
+    int m, n;
+
+    // Leer tamaños de los vectores
+    cout << "Ingrese el tamaño del primer vector: ";
+    cin >> m;
+    cout << "Ingrese el tamaño del segundo vector: ";
+    cin >> n;
+
+    vector<int> v1(m);
+    vector<double> v2(n);
+    vector<string> v3(m);
+
+    // Ingreso de vectores
+    cout << "\nIngrese los elementos del primer vector:" << endl;
+    ingresar_vector(v1);
+
+    cout << "\nIngrese los elementos del segundo vector:" << endl;
+    ingresar_vector(v2);
+
+    cout << "\nIngrese los elementos del tercer vector:" << endl;
+    ingresar_vector(v3);
+
+    // Visualizar vectores
+    cout << "\nEl vector 1 es: ";
+    visualizar_vector(v1);
+
+    cout << "El vector 2 es: ";
+    visualizar_vector(v2);
+
+    cout << "El vector 3 es: ";
+    visualizar_vector(v3);
+
+    // Ordenar y visualizar vectores 1 y 3
+    ordenar_vector(v1);
+    cout << "\nEl vector 1 ordenado ascendentemente es: ";
+    visualizar_vector(v1);
+
+    ordenar_vector(v3);
+    cout << "El vector 3 ordenado ascendentemente es: ";
+    visualizar_vector(v3);
+
+    return 0;
+}
