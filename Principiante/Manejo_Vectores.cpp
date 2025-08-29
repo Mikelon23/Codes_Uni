@@ -41,3 +41,21 @@ void visualizar_vector(const vector<double> &v) {
     }
     cout << endl;
 }
+// Función para visualizar vector de cadenas
+void visualizar_vector(const vector<string> &v) {
+    for (size_t i = 0; i < v.size(); i++) {
+        cout << v[i] << " ";
+    }
+    cout << endl;
+}
+
+// Función para ordenar vector entero (ascendente)
+void ordenar_vector(vector<int> &v) {
+    for (size_t i = 0; i < v.size(); i++) {
+        for (size_t j = 0; j < v.size() - 1; j++) {
+            if (v[j] > v[j + 1]) {
+                swap(v[j], v[j + 1]);
+            }
+        }
+    }
+}
