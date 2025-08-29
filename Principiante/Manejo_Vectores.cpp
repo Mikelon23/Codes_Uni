@@ -75,9 +75,9 @@ int main() {
     int m, n;
 
     // Leer tamaños de los vectores
-    cout << "Ingrese el tamaño del primer vector: ";
+    cout << "Ingrese el tamanio del primer vector: ";
     cin >> m;
-    cout << "Ingrese el tamaño del segundo vector: ";
+    cout << "Ingrese el tamanio del segundo vector: ";
     cin >> n;
 
     vector<int> v1(m);
