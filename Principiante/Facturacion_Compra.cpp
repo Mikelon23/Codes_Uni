@@ -20,7 +20,6 @@ double ingreso_compra(vector<int> &vc, vector<string> &vd, vector<double> &vp, v
     return suma;
 }
 
-// Función para visualizar la factura
 void visualizar_compra(vector<int> &vc, vector<string> &vd, vector<double> &vp, vector<double> &vpt, int n, double suma, double iva, double total) {
     cout << "\nN°  Cantidad  Producto          P. Unitario  P. Total\n";
     for (int i = 0; i < n; i++) {
