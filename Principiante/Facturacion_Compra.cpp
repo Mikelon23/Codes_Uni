@@ -3,7 +3,6 @@
 #include <string>
 using namespace std;
 
-// Función para ingresar los datos de la compra y calcular subtotal
 double ingreso_compra(vector<int> &vc, vector<string> &vd, vector<double> &vp, vector<double> &vpt, int n) {
     double suma = 0.0;
     for (int i = 0; i < n; i++) {
