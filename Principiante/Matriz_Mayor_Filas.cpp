@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include <cstdlib>  // para rand()
+#include <cstdlib>
 #include <ctime>    // para time()
 using namespace std;
 
