@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-#include <cstdlib> // para rand()
+#include <cstdlib>
 using namespace std;
 
 // Función para llenar la matriz aleatoriamente
