@@ -50,3 +50,37 @@ void llenado_matriz(vector<vector<int>> &mat, const vector<int> &v) {
         for(int j=0; j<mat[0].size(); j++)
             mat[i][j] = v[idx++];
 }
+
+int main() {
+    int m, n;
+    cout << "Ingrese el numero de filas de la matriz: ";
+    cin >> m;
+    cout << "Ingrese el numero de columnas de la matriz: ";
+    cin >> n;
+
+    vector<vector<int>> mat1(m, vector<int>(n));
+    vector<vector<int>> mat2(n, vector<int>(m));
+    vector<vector<int>> mat3(n, vector<int>(m));
+    vector<int> Vaux(m*n);
+
+    // Llenado matriz original
+    entrada(mat1, m, n);
+    cout << "\nMatriz original:\n";
+    salida(mat1, m, n);
+
+    // Transpuesta
+    transpuesta(mat1, mat2, m, n);
+    cout << "\nMatriz transpuesta:\n";
+    salida(mat2, n, m);
+
+    // Llenado vector y orden descendente
+    llenado_vector(mat2, Vaux);
+    ordenar_vector(Vaux);
+
+    // Llenado matriz transpuesta ordenada
+    llenado_matriz(mat3, Vaux);
+    cout << "\nMatriz transpuesta ordenada descendentemente:\n";
+    salida(mat3, n, m);
+
+    return 0;
+}
