@@ -28,3 +28,22 @@ int main() {
         mat[i][3] = s / 3; // promedio del estudiante
         st += mat[i][3];   // acumular para promedio del grupo
     }
+
+    double pg = st / m;
+
+    // Mostrar notas y promedios
+    cout << "\n===== NOTAS DE LOS ESTUDIANTES =====" << endl;
+    for (int i = 0; i < m; i++) {
+        cout << "\nNombre: " << vnombres[i] << endl;
+        for (int j = 0; j < 4; j++) {
+            if (j == 3)
+                cout << "Promedio: " << mat[i][j] << endl;
+            else
+                cout << "Nota Parcial " << j + 1 << ": " << mat[i][j] << "   ";
+        }
+    }
+
+    cout << "\nPromedio del grupo: " << pg << endl;
+
+    return 0;
+}
