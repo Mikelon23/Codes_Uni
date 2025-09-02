@@ -7,9 +7,9 @@ int main() {
 
     cout << "===== MENÚ PRINCIPAL =====" << endl;
     cout << "1. VENDEDORES" << endl;
-    cout << "2. DISEÑADORES" << endl;
+    cout << "2. DISENADORES" << endl;
     cout << "3. ADMINISTRATIVOS" << endl;
-    cout << "Escoja su opción: ";
+    cout << "Escoja su opcion: ";
     cin >> op;
 
     if(op >= 1 && op <= 3) {
