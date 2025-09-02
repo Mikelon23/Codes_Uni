@@ -68,3 +68,25 @@ int main() {
     int op;
     cout << "\nQue nota desea modificar?\n1. Nota 1\n2. Nota 2\n3. Nota 3\nSeleccione su opcion: ";
     cin >> op;
+
+    if(op >= 1 && op <= 3) {
+        double nuevaNota;
+        cout << "Ingrese el nuevo valor de la nota " << op << ": ";
+        cin >> nuevaNota;
+        estudiantes[pos].notas[op-1] = nuevaNota;
+        // recalcular promedio
+        estudiantes[pos].notas[3] = (estudiantes[pos].notas[0] +
+                                     estudiantes[pos].notas[1] +
+                                     estudiantes[pos].notas[2]) / 3.0;
+
+        cout << "\nDatos modificados:\n";
+        cout << "Nombre: " << estudiantes[pos].nombre << endl;
+        for(int j = 0; j < 3; j++)
+            cout << "Nota parcial " << j+1 << ": " << estudiantes[pos].notas[j] << endl;
+        cout << "Definitiva: " << estudiantes[pos].notas[3] << endl;
+    } else {
+        cout << "Error, ingrese un valor entre 1 y 3\n";
+    }
+
+    return 0;
+}
