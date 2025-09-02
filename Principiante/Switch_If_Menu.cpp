@@ -32,6 +32,5 @@ int main() {
         default:
             cout << "Error, debe ser un número entre 1 y 3" << endl;
     }
-
     return 0;
 }
