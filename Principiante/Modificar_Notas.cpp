@@ -52,3 +52,19 @@ int main() {
             break;
         }
     }
+
+    if(pos != -1) {
+        cout << "\nEstudiante encontrado:\n";
+        cout << "Nombre: " << estudiantes[pos].nombre << endl;
+        for(int j = 0; j < 3; j++)
+            cout << "Nota parcial " << j+1 << ": " << estudiantes[pos].notas[j] << endl;
+        cout << "Definitiva: " << estudiantes[pos].notas[3] << endl;
+    } else {
+        cout << "Codigo no encontrado.\n";
+        return 0;
+    }
+
+    // Modificar nota
+    int op;
+    cout << "\nQue nota desea modificar?\n1. Nota 1\n2. Nota 2\n3. Nota 3\nSeleccione su opcion: ";
+    cin >> op;
