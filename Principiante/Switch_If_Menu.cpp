@@ -25,3 +25,13 @@ int main() {
             ns = sueldo * 1.10;
             cout << "El nuevo sueldo del diseñador es: " << ns << endl;
             break;
+        case 3:
+            ns = sueldo * 1.05;
+            cout << "El nuevo sueldo del administrativo es: " << ns << endl;
+            break;
+        default:
+            cout << "Error, debe ser un número entre 1 y 3" << endl;
+    }
+
+    return 0;
+}
