@@ -30,3 +30,25 @@ int main() {
         }
         estudiantes[i].notas[3] = suma / 3.0; // promedio
     }
+
+    // Mostrar todos los estudiantes
+    cout << "\nDatos de los estudiantes:\n";
+    for(int i = 0; i < n; i++) {
+        cout << "Codigo: " << estudiantes[i].codigo
+             << ", Nombre: " << estudiantes[i].nombre << endl;
+        for(int j = 0; j < 3; j++)
+            cout << "Nota " << j+1 << ": " << estudiantes[i].notas[j] << "  ";
+        cout << "Promedio: " << estudiantes[i].notas[3] << endl;
+    }
+
+    // Buscar estudiante por código
+    int cod;
+    cout << "\nIngrese el codigo a buscar: ";
+    cin >> cod;
+    int pos = -1;
+    for(int i = 0; i < n; i++) {
+        if(estudiantes[i].codigo == cod) {
+            pos = i;
+            break;
+        }
+    }
