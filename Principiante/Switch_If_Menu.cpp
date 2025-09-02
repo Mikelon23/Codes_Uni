@@ -16,3 +16,12 @@ int main() {
         cout << "Ingrese su sueldo: ";
         cin >> sueldo;
     }
+
+    switch(op) {
+        case 1:
+            cout << "El nuevo sueldo del vendedor es: " << sueldo * 1.12 << endl;
+            break;
+        case 2:
+            ns = sueldo * 1.10;
+            cout << "El nuevo sueldo del diseñador es: " << ns << endl;
+            break;
