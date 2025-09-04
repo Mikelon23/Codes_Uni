@@ -50,3 +50,29 @@ void diagonal_secundaria(const vector<vector<int>> &mat) {
         cout << mat[i][j] << "  ";
     cout << endl;
 }
+
+int main() {
+    int p;
+    cout << "Ingrese el numero de filas y columnas de la matriz: ";
+    cin >> p;
+
+    vector<vector<int>> mat(p, vector<int>(p));
+    vector<int> Vaux(p*p);
+
+    ingresar_matriz(mat, p);
+
+    cout << "\nLa matriz ingresada es:" << endl;
+    visualizar_matriz(mat);
+
+    lleno_vector(mat, Vaux);
+    ordena_vector(Vaux);
+    lleno_matriz(mat, Vaux);
+
+    cout << "\nLa matriz ordenada es:" << endl;
+    visualizar_matriz(mat);
+
+    cout << "\nLa diagonal secundaria de la matriz es:" << endl;
+    diagonal_secundaria(mat);
+
+    return 0;
+}
