@@ -20,3 +20,15 @@ int main() {
     } else {
         cout << "La cadena tiene menos de 5 caracteres, no se puede extraer subcadena." << endl;
     }
+
+    // Ingreso de la segunda cadena
+    cout << "Ingrese la segunda cadena: ";
+    string cadSegunda;
+    getline(cin, cadSegunda);
+
+    // Concatenación de cadenas
+    cad3 = cad1 + " " + cadSegunda;
+    cout << "La cadena final concatenada es: " << cad3 << endl;
+
+    return 0;
+}
