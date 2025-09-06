@@ -23,4 +23,30 @@ int main() {
         cout << "Ingrese el valor " << i + 1 << ": ";
         cin >> b[i];
     }
+    // Intercalar vectores
+    for (int i = 0; i < 2 * n; i++) {
+        if (i % 2 == 0) { // posiciones pares en C++ (0,2,4...) para a
+            c[i] = a[j];
+            j++;
+        } else {          // posiciones impares para b
+            c[i] = b[k];
+            k++;
+        }
+    }
 
+    // Mostrar resultados
+    cout << "\nEl vector a es:\n";
+    for (int i = 0; i < n; i++)
+        cout << a[i] << " ";
+    
+    cout << "\nEl vector b es:\n";
+    for (int i = 0; i < n; i++)
+        cout << b[i] << " ";
+
+    cout << "\nEl vector intercalado c es:\n";
+    for (int i = 0; i < 2 * n; i++)
+        cout << c[i] << " ";
+
+    cout << endl;
+    return 0;
+}
