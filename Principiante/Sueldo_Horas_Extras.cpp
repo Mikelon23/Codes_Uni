@@ -8,7 +8,7 @@ int main() {
     cout << "Ingrese su sueldo base: ";
     cin >> s;
 
-    cout << "Cuantas horas extras en la mañana del mes: ";
+    cout << "Cuantas horas extras en la maniana del mes: ";
     cin >> hd;
 
     cout << "Cuantas horas extras en la noche del mes: ";
