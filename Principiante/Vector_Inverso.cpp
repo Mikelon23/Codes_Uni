@@ -10,3 +10,10 @@ int main() {
     cin >> n;
 
     vector<int> v(n);
+
+    // Ingreso y suma de elementos
+    for (int i = 0; i < n; i++) {
+        cout << "Ingrese el valor " << i + 1 << ": ";
+        cin >> v[i];
+        s += v[i];
+    }
