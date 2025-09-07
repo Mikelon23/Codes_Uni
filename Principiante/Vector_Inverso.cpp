@@ -17,3 +17,10 @@ int main() {
         cin >> v[i];
         s += v[i];
     }
+
+    // Mostrar elementos en orden normal
+    cout << "\nLos elementos del vector son:\n";
+    for (int i = 0; i < n; i++) {
+        cout << v[i] << " ";
+    }
+    cout << endl;
