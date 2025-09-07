@@ -24,3 +24,11 @@ int main() {
         cout << v[i] << " ";
     }
     cout << endl;
+
+    // Mostrar elementos en orden inverso
+    cout << "\nLos elementos del vector en orden inverso son:\n";
+    for (int i = n - 1; i >= 0; i--) {
+        cout << v[i] << " ";
+    }
+    cout << endl;
+
