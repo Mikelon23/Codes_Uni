@@ -8,7 +8,6 @@ int main() {
 
     cout << "Ingrese el numero de elementos del vector: ";
     cin >> n;
-
     vector<int> v(n);
 
     // Ingreso y suma de elementos
@@ -32,3 +31,10 @@ int main() {
     }
     cout << endl;
 
+    // Suma y promedio
+    prom = static_cast<double>(s) / n;
+    cout << "La suma de elementos es: " << s << endl;
+    cout << "El promedio es: " << prom << endl;
+
+    return 0;
+}
