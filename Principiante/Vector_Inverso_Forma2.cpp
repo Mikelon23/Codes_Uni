@@ -13,3 +13,16 @@ int main() {
         cout << "Ingrese el valor " << i + 1 << ": ";
         cin >> v[i];
     }
+
+    // Mostrar vector original
+    cout << "\nEl vector original es:\n";
+    for (int i = 0; i < n; i++) {
+        cout << v[i] << " ";
+    }
+    cout << endl;
+
+    // Crear vector inverso
+    for (int i = n - 1; i >= 0; i--) {
+        v2[j] = v[i];
+        j++;
+    }
