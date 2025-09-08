@@ -26,3 +26,13 @@ int main() {
         v2[j] = v[i];
         j++;
     }
+
+    // Mostrar vector inverso
+    cout << "\nEl vector en orden inverso es:\n";
+    for (int i = 0; i < n; i++) {
+        cout << v2[i] << " ";
+    }
+    cout << endl;
+
+    return 0;
+}
