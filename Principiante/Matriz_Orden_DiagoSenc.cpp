@@ -1,6 +1,3 @@
-// ------------------------------------------------------
-//          Matriz Ordenada y Diagonal Secundaria
-// ------------------------------------------------------
 #include <iostream>
 #include <vector>
 #include <cstdlib>
@@ -73,14 +70,11 @@ void diagonal_secundaria(const vector<vector<int>>& mat, int p) {
     cout << endl;
 }
 
-// ------------------------------------------------------
-//                    PROGRAMA PRINCIPAL
-// ------------------------------------------------------
 int main() {
     srand(time(0)); // inicializa números aleatorios
 
     int p;
-    cout << "Ingrese el número de filas y columnas de la matriz cuadrada: ";
+    cout << "Ingrese el numero de filas y columnas de la matriz cuadrada: ";
     cin >> p;
 
     vector<vector<int>> mat(p, vector<int>(p));
