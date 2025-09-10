@@ -3,7 +3,7 @@
 // ------------------------------------------------------
 #include <iostream>
 #include <vector>
-#include <cstdlib>   // rand(), srand()
+#include <cstdlib>
 #include <ctime>     // time()
 using namespace std;
 
