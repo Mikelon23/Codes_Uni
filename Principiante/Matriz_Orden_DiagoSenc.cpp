@@ -4,7 +4,7 @@
 #include <iostream>
 #include <vector>
 #include <cstdlib>
-#include <ctime>     // time()
+#include <ctime>
 using namespace std;
 
 // Ingresar valores a la matriz (aquí se usan aleatorios con azar(10))
