@@ -1,6 +1,4 @@
 // ======================================
-//   Algoritmo de Búsqueda Binaria
-// ======================================
 
 #include <iostream>
 #include <cstdlib>
