@@ -41,7 +41,7 @@ int main() {
     }
     cout << endl;
 
-    cout << "Ingrese el número a buscar: ";
+    cout << "Ingrese el numero a buscar: ";
     cin >> num;
 
     // Búsqueda binaria
