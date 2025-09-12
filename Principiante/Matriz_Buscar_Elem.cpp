@@ -9,7 +9,6 @@ int main() {
     cin >> m;
     cout << "Ingrese el numero de columnas de la matriz: ";
     cin >> n;
-
     // Declarar matriz dinámica con vector
     vector<vector<int>> mat(m, vector<int>(n));
 
