@@ -42,13 +42,11 @@ int main() {
             }
         }
     }
-
     // Mostrar resultado
     if (c != 0) {
         cout << "\nEncontró el número y se repite " << c << " veces." << endl;
     } else {
         cout << "\nNo encontró el número." << endl;
     }
-
     return 0;
 }
