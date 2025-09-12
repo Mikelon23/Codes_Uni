@@ -5,7 +5,6 @@ using namespace std;
 int main() {
     int m, n, num, c = 0;
 
-    // Leer dimensiones de la matriz
     cout << "Ingrese el numero de filas de la matriz: ";
     cin >> m;
     cout << "Ingrese el numero de columnas de la matriz: ";
