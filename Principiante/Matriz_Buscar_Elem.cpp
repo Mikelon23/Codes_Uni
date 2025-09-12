@@ -31,8 +31,6 @@ int main() {
         }
         cout << endl;
     }
-
-    // Leer número a buscar
     cout << "\nIngrese el número a buscar: ";
     cin >> num;
 
