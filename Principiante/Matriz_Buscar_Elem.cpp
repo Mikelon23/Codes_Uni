@@ -1,8 +1,3 @@
-//===========================================================
-//   Búsqueda de un elemento en una matriz
-//   Transformación de pseudocódigo a C++
-//===========================================================
-
 #include <iostream>
 #include <vector>
 using namespace std;
@@ -11,9 +6,9 @@ int main() {
     int m, n, num, c = 0;
 
     // Leer dimensiones de la matriz
-    cout << "Ingrese el número de filas de la matriz: ";
+    cout << "Ingrese el numero de filas de la matriz: ";
     cin >> m;
-    cout << "Ingrese el número de columnas de la matriz: ";
+    cout << "Ingrese el numero de columnas de la matriz: ";
     cin >> n;
 
     // Declarar matriz dinámica con vector
