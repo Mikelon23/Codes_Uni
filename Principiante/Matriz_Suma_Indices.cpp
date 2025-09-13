@@ -2,7 +2,7 @@
 using namespace std;
 
 int main() {
-    int mat[4][6]; // Matriz de 4 filas y 6 columnas
+    int mat[4][6];
 
     // Llenar la matriz con la suma de los índices (ajustando a base 0)
     for (int i = 0; i < 4; i++) {
