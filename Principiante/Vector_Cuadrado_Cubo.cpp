@@ -21,4 +21,3 @@ int main() {
 
     return 0;
 }
-// Algoritmo vector_cuadrado_cubo
