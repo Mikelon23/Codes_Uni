@@ -1,6 +1,5 @@
-// Algoritmo vector_cuadrado_cubo
 #include <iostream>
-#include <cmath> // Para usar pow()
+#include <cmath> 
 using namespace std;
 
 int main() {
@@ -16,7 +15,7 @@ int main() {
 
     for (int i = 0; i < 5; i++) {
         int cuadrado = vn[i] * vn[i];
-        int cubo = pow(vn[i], 3); // pow retorna double, pero lo guardamos en int
+        int cubo = pow(vn[i], 3);
         cout << vn[i] << "        " << cuadrado << "        " << cubo << endl;
     }
 
