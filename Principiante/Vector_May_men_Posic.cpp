@@ -10,3 +10,14 @@ int main() {
         cout << "Ingrese el valor " << (i + 1) << ": ";
         cin >> v[i];
     }
+    cout << "\nEl vector original es:" << endl;
+    for (i = 0; i < 12; i++) {
+        cout << v[i] << " ";
+    }
+    cout << endl;
+
+    // Inicializamos con el primer elemento
+    may = v[0];
+    men = v[0];
+    pmen = 0;
+    pmay = 0;
