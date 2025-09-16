@@ -21,3 +21,20 @@ int main() {
     men = v[0];
     pmen = 0;
     pmay = 0;
+
+    for (i = 0; i < 12; i++) {
+        if (v[i] < men) {
+            men = v[i];
+            pmen = i;
+        }
+        if (v[i] > may) {
+            may = v[i];
+            pmay = i;
+        }
+    }
+
+    cout << "\nNumero mayor: " << may << " en posicion: " << (pmay + 1) << endl;
+    cout << "Numero menor: " << men << " en posicion: " << (pmen + 1) << endl;
+
+    return 0;
+}
