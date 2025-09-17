@@ -45,7 +45,7 @@ int main() {
         cout << "Numero de mes invalido." << endl;
     }
 
-    // OPCIONAL: Mostrar todos los meses y sus días
+    //Mostrar todos los meses y sus días
     /*
     cout << "\nMes         Dias" << endl;
     for (int i = 0; i < 12; i++) {
