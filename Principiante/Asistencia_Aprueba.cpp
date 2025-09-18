@@ -14,3 +14,8 @@ int main() {
     if (a >= 80 && nf >= 8 && nf <= 10) {
         cout << "Aprobo la materia" << endl;
     } else {
+        cout << "Reprobo la materia" << endl;
+    }
+
+    return 0;
+}
