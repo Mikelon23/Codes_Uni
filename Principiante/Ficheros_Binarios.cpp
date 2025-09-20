@@ -33,3 +33,13 @@ int main(){
 	f2.write(nombre,10);
 	//e. Escribir el dato de tipo Tdato p en el fichero.
 	p.b=894;
+	strcpy(p.s,"mundo");
+	f2.write((char*)&p,sizeof(Tdato));
+	f2.close();
+	f1.open("f1.dat",ios::binary);
+	//f. Leer un dato entero del fichero y almacenarlo en la variable x.
+	f1.read((char*)&x,sizeof(int));
+	//g. Leer un dato double del fichero y almacenarlo en la variable f.
+	f1.read((char*)&f,sizeof(double));
+	//h. Leer 5 enteros y almacenarlos en el array a.
+	f1.read((char*)&a[0],5*sizeof(int));
