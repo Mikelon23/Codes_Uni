@@ -43,3 +43,17 @@ int main(){
 	f1.read((char*)&f,sizeof(double));
 	//h. Leer 5 enteros y almacenarlos en el array a.
 	f1.read((char*)&a[0],5*sizeof(int));
+	//i. Leer 10 caracteres y almacenarlos en la cadena nombre.
+	f1.read(nombre,10);
+	//j. Leer un dato de tipo Tdato y almacenarlo en la variable p.
+	f1.read((char*)&p,sizeof(Tdato));
+	f1.close();
+	cout << x << endl;
+	cout << f << endl;
+	cout << a[0] << " " << a[1] << " " << a[2] << " " << a[3] << " " << a[4] << " " << endl;
+	cout << nombre << endl;
+	cout << p.b << endl;
+	cout << p.s << endl;
+	system("pause");
+	return 0;
+}
