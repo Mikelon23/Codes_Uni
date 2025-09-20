@@ -1,4 +1,3 @@
-/*Escribir las instrucciones para realizar cada una de las siguientes operaciones:*/
 #include<iostream>
 #include<fstream>
 #include<stdlib.h>
